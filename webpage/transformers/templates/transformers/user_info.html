@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Single Transformer View</h1>
+<br>
+{% if singleview %}
+  <h4>Transformer Loc: {{singleview.Transformer_Loc}}</h4>
+  <h4>SKU: {{single_view.SKU}}</h4>
+{% else %}
+  <h4>Transformer Loc: N/A</h4>
+  <h4>SKU: N/A</h4>
+{% endif %}
+{% endblock  %}

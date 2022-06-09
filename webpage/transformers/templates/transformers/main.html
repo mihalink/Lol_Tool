@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Transformer Yearly Report</h1>
+<br>
+<h4>Transformers:</h4>
+<ul>
+  {% for number in '012'|make_list %}
+    <li>TE 86{{forloop.counter}}</li>
+  {% endfor %}
+</ul>
+{% endblock  %}
